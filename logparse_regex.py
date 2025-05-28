@@ -4,7 +4,7 @@ import argparse
 
 def parse_log_file(filename):
     process_times = {}
-    pattern = r'PID-(\d+),(\d+\.?\d*)s?,'
+    pattern = r'PID-(\d+),(\d+\.?\d*)s?'
     
     with open(filename, 'r') as f:
         for line in f:
